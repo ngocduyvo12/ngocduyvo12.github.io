@@ -1,3 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Roboto");
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0 8px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 1.5rem;
+  font-family: "Courgette", serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: -0.05rem;
+}
+blockquote:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #a9dfbf;
+  border-radius: 60px;
+}
+
+figure {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+  width: 98vw;
+  height: 100vh;
+}
+.hero:nth-child(1) figure {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506260408121-e353d10b87c7.jpg");
+}
+.hero:nth-child(2) figure {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506744038136-46273834b3fb.jpg");
+}
+
+.hero:nth-child(5) figure {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1501785888041-af3ef285b470.jpg");
+}
+
+.hero-inner {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, auto, auto, 0);
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  .hero-inner {
+    clip: unset;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.hero__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  letter-spacing: 0rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 1rem;
+  }
+}
+
+.content {
+  position: relative;
+  margin: 0 auto 1rem;
+  /* padding: 2rem; */
+}
+.content:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  z-index: 99;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.content__inner {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.content__inner > * + * {
+  margin-top: 1.5rem;
+}
+.content__inner > blockquote {
+  margin: 3rem 0;
+}
+
+.content__title {
+  font-family: "Courgette", serif;
+  font-size: 3rem;
+  line-height: 1.25;
+  letter-spacing: -0.125rem;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .content__title {
+    font-size: 4rem;
+  }
+}
+
+.content__author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  width: 100%;
+  font-family: "Courgette", serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.125rem;
+  text-align: center;
+}
+.content__author:before, .content__author:after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #a9dfbf;
+}
+.content__author:before {
+  margin-right: 1rem;
+}
+.content__author:after {
+  margin-left: 1rem;
+}
+
+.projects-content {
+    max-width: none;
+    background-image: url(../images/projects-back-ground.jpg);
+}
+
+/* ////////////////////////////////////////////////////////////// */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +176,7 @@
 }
 
 html, body {
-    background-image: url(../images/leaves.png);
+    /* background-image: url(../images/leaves.png); */
     margin: 0px;
     height: 100%;
 
@@ -17,8 +188,8 @@ html, body {
 }
 
 div {
-    width: 960px;
-    padding: 20px;
+    width: 1100px;
+    padding: 0 8px;
     margin: 0 auto;
 }
 
@@ -62,9 +233,9 @@ div {
 }
 
 .workingregion {
-    background-color: white;
-    border: 1px solid #4aaaa5;
-    border-radius: 20px;
+    /* background-color: white; */
+    /* border: 1px solid #4aaaa5; */
+    /* border-radius: 20px; */
     margin-bottom: 10px;
 }
 
@@ -98,12 +269,12 @@ div {
 
 .overlay {
     position: absolute;
-    top: 20px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 72%;
-    width: 67%;
+    height: 99%;
+    width: 93%;
     opacity: 0;
     transition: .5s ease;
     background-color: #4aaaa5;
@@ -161,16 +332,20 @@ a {
 #resume {
     padding: 0px !important;
 }
-
+/* 
+img {
+    width: 25%;
+    height: 25%;
+} */
 /*
   These rules take effect when the browser's width
   is either 768px or less.
 */
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
 
     .workingregion {
       width: 50vw;
       font-size: small;
     }
   
-  }
+  } */

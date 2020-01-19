@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-    <div class="topbar">
-        <div class="toppart">
-            <h1 class="name">Ngoc Vo</h1>
+    <section class="hero">
+        <div class="hero-inner" id="section-0">
+            <figure></figure>
+            <h2 class="hero__title" style="font-family: Courgette, serif; font-size: 8vw; margin-top: 0;">Ngoc Vo</h2>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="workingregion">
+    </section>
+    <section class="hero">
+        <div class="hero-inner" id="section-1">
+            <figure></figure>
+            <h2 style="font-size: 4vw; margin-top: 0;" class="hero__title">"Great things never come from comfort zones" -Roy T. Bennett
+            </h2>
+        </div>
+    </section>
 
-            <h2>About Me</h2>
-            <hr />
-
-            <img class="profilepic" src="assets/images/profile pic.jpg" alt="Something" />
-
-
+    <section class="content">
+        <article class="content__inner">
+            <h1 class="content__title">A little bit about me</h1>
             <p>
                 My name is Ngoc Vo, and I have a bachelor's degree in Mechanical Engineering at University of Colorado,
                 Denver.
@@ -40,6 +45,7 @@
                 I learned a lot of useful techniques, and I was able travel a lot. After a
                 while, I wanted to spend more time with my family and focus on learning development techniques further.
             </p>
+            <blockquote>When you do it your way you can go anywhere you choose.</blockquote>
             <p>
                 Coding has always been a passion of mine. During my time as a student, I would often spend hours
                 teaching
@@ -47,253 +53,231 @@
                 I switched gears, I was lucky to be able to get into University of Denver’s full-stack
                 coding bootcamp, which leveled my skills further and advanced my learning.
             </p>
+        </article>
+    </section>
+    <section class="content2" >
+        <article class="content__inner projects-content">
+            <h1 class="content__title">Projects</h1>
+            <div class="workingregion clearfix">
+                <h2>Hover over the images for more information</h2>
+                <hr />
+    
+                <div style="clear: left" class="container">
+                    <img src="assets/images/portfolio1.jpg" alt="sunday staple" width="200" height="250" />
+                    <div class="port1pic">
+                        Sunday Staple
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://ngocduyvo12.github.io/sunday-staple/">Sunday Staple</a>
+                            </br>
+                            A website designed to help meal planning easier for user
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="assets/images/Wheelin 'N Dealin Logo.png" alt="wheeling" width="200" height="250" />
+                    <div class="port1pic">Wheelin' n dealin'
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://fathomless-oasis-54748.herokuapp.com/">Wheelin' n dealin'</a>
+                            </br>
+                            One stop shop for all your automobile buying experience. With hidden menu and bidding available
+                            for registered users.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="assets/images/reign-of-react.jpg" alt="reign of react" width="200" height="250" />
+                    <div class="port1pic">Reign of React
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://frozen-garden-53520.herokuapp.com/">Reign of React</a>
+                            </br>
+                            Role playing game with card collecting element.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="assets/images/web-scrape.jpeg" alt="scraping" width="200" height="250" />
+                    <div class="port1pic">
+                        Mongoose Scraping
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://dark-ghost-32545.herokuapp.com/">Mongoose Scraping</a>
+                            </br>
+                            Demonstrate the ability to scrape a website of choice and displaying it on front end html.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="container">
+                    <img src="assets/images/junior-burger.jpg" alt="burger" width="200" height="250" />
+                    <div class="port1pic">Burger
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://fast-bayou-18978.herokuapp.com/">Burger</a>
+                            </br>
+                            The purpose of this app is to create a want to eat list of burgers, and the ability to devour
+                            the burger on these list and reorganize them.
+                        </div>
+                    </div>
+                </div>
+    
+                <div style="clear: left" class="container">
+                    <img src="assets/images/black-crystal.png" alt="crystal collector" width="200" height="250" />
+                    <div class="port1pic">Crystal Collector
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://ngocduyvo12.github.io/crystal-collector/">Crystal Collector</a>
+                            </br>
+                            Crystal collecting game using java-script
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="container">
+                    <img src="assets/images/giphy.webp" alt="gifs" width="200" height="250" />
+                    <div class="port1pic">Random Gifs
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://ngocduyvo12.github.io/giphy-homework/">Random Gifs</a>
+                            </br>
+                            Look up gifs using giphy api.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="assets/images/trvia-img.jpg" alt="movie trivia" width="200" height="250" />
+                    <div class="port1pic">Movie Trivia
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://ngocduyvo12.github.io/TriviaGame/">Movie Trivia</a>
+                            </br>
+                            Movie trivia questionnaire with timer and score rating.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="assets/images/train-img.jpg" alt="train time" width="200" height="250" />
+                    <div class="port1pic">Train Time
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://ngocduyvo12.github.io/train-time/">Train Time</a>
+                            </br>
+                            Data persistent train time table using firebase and moment api.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="container">
+                    <img src="assets/images/liri-bots.png" alt="liri" width="200" height="250" />
+                    <div class="port1pic">Liri Bots
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://github.com/ngocduyvo12/liri-bot">Liri Bots</a>
+                            </br>
+                            Simple node application to look up movies, songs, and concerts using different apis.
+                        </div>
+                    </div>
+                </div>
+    
+                <div style="clear: left" class="container">
+                    <img src="assets/images/psychic-game.jpg" alt="psychic" width="200" height="250" />
+                    <div class="port1pic">Simple Letters Guess
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://ngocduyvo12.github.io/Psychic-game/">Simple Letters Guess</a>
+                            </br>
+                            Simple letter guessing game with win and loss counts.
+                        </div>
+                    </div>
+                </div>
+    
+
+    
+                <div class="container">
+                    <img src="assets/images/bamazon.jpg" alt="bamazon" width="200" height="250" />
+                    <div class="port1pic">Shopping with Node
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://github.com/ngocduyvo12/bamazon">Shopping with Node</a>
+                            </br>
+                            Node application using MySql database and inquirer with different tiers usage.
+                        </div>
+                    </div>
+                </div>
+    
+
+    
+                <div class="container">
+                    <img src="assets/images/friend-finder.jpg" alt="friendfinder" width="200" height="250" />
+                    <div class="port1pic">Friend Finder
+                    </div>
+    
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="https://tranquil-earth-32180.herokuapp.com/">Friend Finder</a>
+                            </br>
+                            Friend finder app to match user with registered users with similar interest.
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </article>
+    </section>
+
+    <section class="hero">
+        <div class="hero-inner" id="section-3">
+            <figure></figure>
+            <h2 class="hero__title">
+                <div class="workingregion" style="color: black;width: 50vw;background-color: white; border: 1px solid #4aaaa5; border-radius: 20px;">
+                    <h2>Contact</h2>
+                    <a href="https://github.com/ngocduyvo12">
+                        <img style="border: 0; padding-right: 15px;" src="assets/images/GitHub-Mark-64px.png">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ngoc-vo-UCD-DU">
+                        <img src="assets/images/LI-In-Bug.png" width="64px" height="64px">
+                    </a>
+                    <br>
+                    Email: <a href="mailto:ngocduyvo12@gmail.com">ngocduyvo12@gmail.com</a>
+                    <hr>
+                </div>
+            </h2>
         </div>
+    </section>
 
-        <div class="workingregion clearfix">
-
-            <h2>Portfolio</h2>
-            <p>Below are some projects I have worked on</p>
-            <p>Hover over the images for more information</p>
-            <hr />
-
-            <div style="clear: left" class="container">
-                <img src="assets/images/portfolio1.jpg" alt="sunday staple" width="200" height="250" />
-                <div class="port1pic">
-                    Sunday Staple
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://ngocduyvo12.github.io/sunday-staple/">Sunday Staple</a>
-                        </br>
-                        A website designed to help meal planning easier for user
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/Wheelin 'N Dealin Logo.png" alt="wheeling" width="200" height="250" />
-                <div class="port1pic">Wheelin' n dealin'
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://fathomless-oasis-54748.herokuapp.com/">Wheelin' n dealin'</a>
-                        </br>
-                        One stop shop for all your automobile buying experience. With hidden menu and bidding available
-                        for registered users.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/reign-of-react.jpg" alt="reign of react" width="200" height="250" />
-                <div class="port1pic">Reign of React
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://frozen-garden-53520.herokuapp.com/">Reign of React</a>
-                        </br>
-                        Role playing game with card collecting element.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/web-scrape.jpeg" alt="scraping" width="200" height="250" />
-                <div class="port1pic">
-                    Mongoose Scraping
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://dark-ghost-32545.herokuapp.com/">Mongoose Scraping</a>
-                        </br>
-                        Demonstrate the ability to scrape a website of choice and displaying it on front end html.
-                    </div>
-                </div>
-            </div>
-
-            <div style="clear: left" class="container">
-                <img src="assets/images/black-crystal.png" alt="crystal collector" width="200" height="250" />
-                <div class="port1pic">Crystal Collector
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://ngocduyvo12.github.io/crystal-collector/">Crystal Collector</a>
-                        </br>
-                        Crystal collecting game using java-script
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="container">
-                <img src="assets/images/giphy.webp" alt="gifs" width="200" height="250" />
-                <div class="port1pic">Random Gifs
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://ngocduyvo12.github.io/giphy-homework/">Random Gifs</a>
-                        </br>
-                        Look up gifs using giphy api.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/trvia-img.jpg" alt="movie trivia" width="200" height="250" />
-                <div class="port1pic">Movie Trivia
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://ngocduyvo12.github.io/TriviaGame/">Movie Trivia</a>
-                        </br>
-                        Movie trivia questionnaire with timer and score rating.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/train-img.jpg" alt="train time" width="200" height="250" />
-                <div class="port1pic">Train Time
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://ngocduyvo12.github.io/train-time/">Train Time</a>
-                        </br>
-                        Data persistent train time table using firebase and moment api.
-                    </div>
-                </div>
-            </div>
-
-            <div style="clear: left" class="container">
-                <img src="assets/images/psychic-game.jpg" alt="psychic" width="200" height="250" />
-                <div class="port1pic">Simple Letters Guess
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://ngocduyvo12.github.io/Psychic-game/">Simple Letters Guess</a>
-                        </br>
-                        Simple letter guessing game with win and loss counts.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/liri-bots.png" alt="liri" width="200" height="250" />
-                <div class="port1pic">Liri Bots
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://github.com/ngocduyvo12/liri-bot">Liri Bots</a>
-                        </br>
-                        Simple node application to look up movies, songs, and concerts using different apis.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/bamazon.jpg" alt="bamazon" width="200" height="250" />
-                <div class="port1pic">Shopping with Node
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://github.com/ngocduyvo12/bamazon">Shopping with Node</a>
-                        </br>
-                        Node application using MySql database and inquirer with different tiers usage.
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="assets/images/junior-burger.jpg" alt="burger" width="200" height="250" />
-                <div class="port1pic">Burger
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://fast-bayou-18978.herokuapp.com/">Burger</a>
-                        </br>
-                        The purpose of this app is to create a want to eat list of burgers, and the ability to devour
-                        the burger on these list and reorganize them.
-                    </div>
-                </div>
-            </div>
-
-            <div style="clear: left" class="container">
-                <img src="assets/images/friend-finder.jpg" alt="friendfinder" width="200" height="250" />
-                <div class="port1pic">Friend Finder
-                </div>
-
-                <div class="overlay">
-                    <div class="text">
-                        <a href="https://tranquil-earth-32180.herokuapp.com/">Friend Finder</a>
-                        </br>
-                        Friend finder app to match user with registered users with similar interest.
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="workingregion">
-
-            <h2>Contact</h2>
-            <a href="https://github.com/ngocduyvo12">
-                <img style="border: 0; padding-right: 15px;" src="assets/images/GitHub-Mark-64px.png" >
-            </a>
-
-            <a href="https://www.linkedin.com/in/ngoc-vo-UCD-DU">
-                <img src="assets/images/LI-In-Bug.png" width="64px" height="64px">
-            </a>
-
-            <hr />
-
-            <form action="mailto:ngocduyvo12@gmail.com" method="post" enctype="text/plain">
-                Name:
-                <br />
-                <input class="contact" type="text" name="first&last" placeholder="John Smith">
-                <br />
-
-                Email:
-                <br />
-                <input class="contact" type="text" name="email" placeholder="example@gmail.com">
-                <br />
-
-                Message:
-                <br />
-                <input class="contactmessage" type="text" name="message" value="">
-                <br />
-
-                <input class="submitbutton" type="submit" value="Submit">
-
-            </form>
-
-
-
-        </div>
-
-
-        <div class="push"></div>
-
-    </div>
-
-    <footer class="footer">Copyright</footer>
 
 </body>
-
-
-
 
 </html>
