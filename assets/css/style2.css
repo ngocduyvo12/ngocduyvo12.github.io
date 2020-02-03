@@ -11,6 +11,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 blockquote {
@@ -45,11 +46,13 @@ figure {
 
 .hero {
   position: relative;
-  width: 98vw;
+  /* width: 98vw; */
   height: 100vh;
+
 }
 .hero:nth-child(1) figure {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506260408121-e353d10b87c7.jpg");
+
 }
 .hero:nth-child(2) figure {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506744038136-46273834b3fb.jpg");
@@ -118,6 +121,7 @@ figure {
 .content__inner {
   margin: 0 auto;
   max-width: 700px;
+  text-align: center;
 }
 .content__inner > * + * {
   margin-top: 1.5rem;
@@ -166,6 +170,7 @@ figure {
 .projects-content {
     max-width: none;
     background-image: url(../images/projects-back-ground.jpg);
+    background-size: cover;
 }
 
 /* ////////////////////////////////////////////////////////////// */
@@ -236,13 +241,14 @@ div {
     /* background-color: white; */
     /* border: 1px solid #4aaaa5; */
     /* border-radius: 20px; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .profilepic {
-    float: left;
-    margin: 10px 15px;
+    /* float: left; */
+    margin: auto;
     width: 145px;
+
 }
 
 .footer {
@@ -332,20 +338,3 @@ a {
 #resume {
     padding: 0px !important;
 }
-/* 
-img {
-    width: 25%;
-    height: 25%;
-} */
-/*
-  These rules take effect when the browser's width
-  is either 768px or less.
-*/
-/* @media screen and (max-width: 980px) {
-
-    .workingregion {
-      width: 50vw;
-      font-size: small;
-    }
-  
-  } */
